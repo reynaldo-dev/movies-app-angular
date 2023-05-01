@@ -1,2 +1,11 @@
-
+@use "./scss/var.scss" as var;
 @import "primeicons/primeicons.css";
+
+
+body {
+    background-color: var.$bg;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
