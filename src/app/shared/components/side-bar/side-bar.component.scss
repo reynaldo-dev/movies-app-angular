@@ -1,0 +1,54 @@
+@use "/src/scss/var.scss" as var;
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+    position: fixed;
+    top: 30;
+    left: 0;
+    height: 100vh;
+    
+   
+}
+
+.sidebar__title{
+   color: rgb(80, 79, 84);
+   margin-left: 10px;
+}
+
+.navbar__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list__item{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   padding: var.$p-lg;
+   border-radius: var.$rounded-xl;
+   transition: all 0.3s ease-in-out;
+
+   & > i, a{
+    color:var.$text-white;
+   }
+
+   & > a{
+         text-decoration: none;
+   }
+}
+
+.list__item:hover{
+    background-color: var.$primary;
+    
+}
+
+.active{
+    background-color: var.$primary;
+
+}

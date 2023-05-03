@@ -1,9 +1,10 @@
 @use "./scss/var.scss" as var;
 @import "primeicons/primeicons.css";
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 body {
     background-color: var.$bg;
+    font-family: 'PT Sans', sans-serif;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;

@@ -1,4 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UiService } from '../../services/ui.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,11 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  private uiService = inject(UiService);
+
   constructor() {}
+
+  toggleSideBar() {
+    this.uiService.toggleSideBar();
+  }
 }

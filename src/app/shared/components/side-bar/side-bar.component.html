@@ -1,0 +1,11 @@
+<aside class="sidebar">
+    <span class="sidebar__title">News Feed</span>
+   <nav class="navbar">
+    <ul class="navbar__list">
+        <li class="list__item" *ngFor="let item of navLinks" routerLinkActive="active">
+            <i class="{{item.icon}}"></i>
+            <a [routerLink]="item.path" >{{item.label}}</a>
+        </li>
+    </ul>
+   </nav>
+</aside>
